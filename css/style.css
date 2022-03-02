@@ -68,7 +68,7 @@ body {
     line-height: 100%;
     border-bottom: 1px solid #00000067;
   }
-  #alvo {
+  #img-time {
     display: none;
   }
 }
@@ -87,6 +87,7 @@ body {
   h1 {
     font-size: 4.2rem !important;
     text-align: center;
+    padding-top: 0px !important;
   }
   .padrao-p {
     text-align: center !important;
@@ -101,7 +102,10 @@ body {
     display: grid;
     margin: auto;
   }
-  #alvo {
+  #img-time {
+    display: none;
+  }
+  .img-one {
     display: none;
   }
   #logo {
@@ -119,7 +123,7 @@ body {
     border: 0;
     font-size: 2rem;
   }
-  .bg-two-2 h2 {
+  .bg-two h2 {
     padding-bottom: 30px;
   }
   .btn-tec {
@@ -134,7 +138,7 @@ body {
     height: 500px;
     object-fit: fill;
   }
-  .div-two .col-sm-12 {
+  .div-three .col-sm-12 {
     justify-content: center !important;
     padding-bottom: 5px;
   }
@@ -147,21 +151,18 @@ body {
   margin-left: auto;
 }
 
-.bg-one {
-  background-color: var(--bg);
+.section-one {
   color: var(--texto);
 }
 .bg-two {
   background-color: var(--bg);
+  color: var(--texto);
 }
-.bg-two-2 {
+.bg-three {
   background-color: var(--bg);
   color: var(--texto);
 }
-.section-one {
-  color: var(--texto);
-}
-.bg-Form {
+.bg-four {
   background-color: var(--bg);
 }
 /*Fim Background-color*/
@@ -175,7 +176,6 @@ h1 {
   margin-bottom: 4rem;
   line-height: 6rem;
   word-break: break-word; /*Essa linha limita os caracters a ficar dentro do bloco */
-
   padding-top: 4rem;
 }
 
@@ -218,7 +218,7 @@ h1 {
 #quemsomos {
   margin-bottom: 5rem;
 }
-.bg-two-2 h2 {
+.bg-two h2 {
   padding-bottom: 30px;
   font-size: 3.5rem;
   font-weight: bold;
@@ -236,6 +236,12 @@ h1 {
 /*Final do CSS section-two*/
 
 /*Início do CSS section-three*/
+.div-three {
+  margin-left: auto;
+}
+.cardMain {
+  justify-content: center;
+}
 .btn-tec .btn-tec-one {
   word-wrap: break-all;
 }
@@ -248,21 +254,18 @@ h1 {
 .btn-tec .div-texto-one p {
   color: var(--texto);
 }
-.div-two p {
+.div-three p {
   font-weight: bold;
   color: var(--texto);
 }
 .btn-tec h3 {
   font-weight: bold;
 }
-.btn-tec .card-shadow:hover {
-  box-shadow: 0 8px 10px #aaa;
-}
 
 /*Fim do CSS section-three*/
 
 /*Slider Container*/
-.bg-two h3 {
+.bg-four h3 {
   font-size: 3.54rem;
   font-weight: bold;
   color: var(--texto);
@@ -285,7 +288,7 @@ h1 {
 
 /*Início do CSS section-four*/
 .section4 {
-  margin-top: 8rem;
+  margin-top: 8%;
   background-color: var(--bg);
 }
 .section4 img {
