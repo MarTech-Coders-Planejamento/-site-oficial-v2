@@ -2,25 +2,17 @@
   --bg: #ffffff;
   --bg2: #38e0be;
   --texto: #1a2b46;
-  --bg3: #3ad8b86e;
 }
 * {
   font-family: 'Tomorrow', sans-serif;
 }
-
 html {
   font-size: 62.5%;
 }
-
 .padrao-p {
   font-size: 2.5rem;
   color: var(--texto);
 }
-.justify-p {
-  font-size: 2.5rem;
-  text-align: justify;
-}
-
 body {
   background-color: var(--bg);
 }
@@ -45,7 +37,7 @@ body {
 }
 #navbarLinks a:hover {
   color: var(--bg2);
-  transition: 0s;
+  transition: 0.1s;
   text-decoration: underline;
 }
 .btnTop {
@@ -57,6 +49,7 @@ body {
 .btnTop:hover {
   color: var(--bg);
   background-color: var(--bg2);
+  transition: 0.3s;
 }
 
 /*Início media query*/
@@ -87,7 +80,6 @@ body {
   h1 {
     font-size: 4.2rem !important;
     text-align: center;
-    padding-top: 0px !important;
   }
   .padrao-p {
     text-align: center !important;
@@ -105,14 +97,12 @@ body {
   #img-time {
     display: none;
   }
-  .img-one {
-    display: none;
-  }
   #logo {
     width: 180px;
     margin-right: 1rem;
+    margin-left: 3rem;
   }
-  #img-two {
+  .img-two {
     display: none;
   }
   .ceo {
@@ -126,21 +116,30 @@ body {
   .bg-two h2 {
     padding-bottom: 30px;
   }
-  .btn-tec {
+  .card-container-main {
     margin-bottom: 50px;
   }
   .img-default {
     display: flex;
     justify-content: center;
   }
+  .img-coders {
+    width: 200rem;
+    height: 20rem !important;
+  } 
   .card {
     width: 300px;
     height: 500px;
     object-fit: fill;
   }
-  .div-three .col-sm-12 {
+  .div-group-card-main .col-sm-12 {
     justify-content: center !important;
     padding-bottom: 5px;
+  }
+  .ceo-final {
+    display: flex;
+    text-align: center !important;
+    margin-top: 4rem;
   }
 }
 /*Fim media query*/
@@ -162,7 +161,7 @@ body {
   background-color: var(--bg);
   color: var(--texto);
 }
-.bg-four {
+.section-four {
   background-color: var(--bg);
 }
 /*Fim Background-color*/
@@ -179,16 +178,17 @@ h1 {
   padding-top: 4rem;
 }
 
-.conteudo1 {
+.conteudo-one {
   margin-top: 60px;
 }
 
-.img-one {
+.img-coders {
   width: 200rem;
   height: 45rem;
 }
 .img-two {
-  max-width: 42rem;
+  width: 200rem;
+  height: 45rem;
 }
 #paragrafo1-1 p {
   text-align: left;
@@ -210,6 +210,7 @@ h1 {
 .btnSectionOne:hover {
   color: var(--bg);
   background-color: var(--bg2);
+  transition: 0.3s;
 }
 
 /*Fim do CSS section-one*/
@@ -222,6 +223,7 @@ h1 {
   padding-bottom: 30px;
   font-size: 3.5rem;
   font-weight: bold;
+  text-align: center;
   color: var(--texto);
 }
 .classDobra2 p {
@@ -232,40 +234,42 @@ h1 {
   font-style: normal;
   text-align: right;
 }
-
 /*Final do CSS section-two*/
 
 /*Início do CSS section-three*/
-.div-three {
-  margin-left: auto;
-}
-.cardMain {
-  justify-content: center;
-}
-.btn-tec .btn-tec-one {
+.card-container-main .child-card-container-main {
   word-wrap: break-all;
 }
-.btn-tec-one h2 {
+.child-card-container-main h2 {
   padding-bottom: 30px;
   font-size: 3.5rem;
   font-weight: bold;
   color: var(--texto);
 }
-.btn-tec .div-texto-one p {
+.card-container-main .div-text-top-card p {
   color: var(--texto);
 }
-.div-three p {
+.div-group-card-main {
+  margin-left: auto;
+}
+.div-group-card-main p {
   font-weight: bold;
   color: var(--texto);
 }
-.btn-tec h3 {
-  font-weight: bold;
+.card-main {
+  justify-content: center;
 }
-
+.card-main .estilo-responsivo-card {
+  max-width: 400px;
+  min-height: 150px
+}
 /*Fim do CSS section-three*/
 
 /*Slider Container*/
-.bg-four h3 {
+.container-carousel {
+  max-width: 100vw
+}
+.section-four h3 {
   font-size: 3.54rem;
   font-weight: bold;
   color: var(--texto);
@@ -286,15 +290,15 @@ h1 {
 }
 /*Fim Slider Container*/
 
-/*Início do CSS section-four*/
-.section4 {
+/*Início do CSS section-five*/
+.section-five {
   margin-top: 8%;
   background-color: var(--bg);
 }
-.section4 img {
+.section-five img {
   height: 500px;
 }
-.section4 .h4 {
+.section-five .h4 {
   display: flex;
   justify-content: center;
   margin-left: 1.3rem;
@@ -304,26 +308,24 @@ h1 {
   font-size: 3.5rem;
   color: var(--texto);
 }
-.section4 {
+.section-five {
   display: flex;
   justify-content: center;
   text-align: center;
   font-size: 2.5rem;
   color: var(--texto);
 }
-.section4 .btn {
+.section-five .btn {
   display: flex;
   justify-content: center;
   color: var(--bg);
   background-color: var(--texto) !important;
 }
-.section4 .btn:hover {
+.section-five .btn:hover {
   background-color: var(--bg2) !important;
   color: var(--bg);
 }
-/*Fim do CSS section-four*/
 
-/*Fim do CSS section-five*/
 .texto-rocket {
   text-align: center;
   margin-bottom: 2rem;
@@ -353,9 +355,14 @@ h1 {
   font-weight: bold;
   color: var(--bg2);
 }
-/*Início do CSS section-five*/
+.ceo-final {
+  font-size: 1.6rem;
+  font-style: normal;
+  text-align: right;
+}
+/*Fim do CSS section-five*/
 
-/*** FOOTER ***/
+/*Início do CSS footer*/
 .footer-Main {
   background-color: var(--texto);
 }
