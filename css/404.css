@@ -1,0 +1,76 @@
+@import url(./style.css);
+
+.container-child-image {
+    padding-top: 8%;
+}
+
+#div-container-image img {
+    height: 700px;
+    width: 100%;
+}
+
+.h1-404 {
+    text-align: left;
+    color: var(--texto);
+}
+
+#div-container-text {
+    padding-left: 4%;
+}
+
+.container-child-text {
+    padding-top: 20%;
+}
+
+.sub-text {
+    font-size: 2.5rem;
+    color: var(--texto)
+}
+
+.btn-back {
+    margin-top: 2%;
+    padding: 15px;
+    font-size: 1.5rem;
+    width: 220px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #38e0be;
+}
+
+.btn-back:hover {
+    color: var(--texto);
+}
+
+@media (min-width: 767px) and (max-width: 991px) { 
+    #div-container-image img {
+        height: 500px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    #div-container-image img {
+        height: 400px;
+    }
+
+    .container-child-text {
+        padding: 20px;
+        margin-bottom: 5%;
+        padding-top: 0%;
+    }
+    
+}
+
+@media (min-width: 100px) and (max-width: 400px) {
+    #div-container-image img {
+        height: 350px;
+    }
+
+    .container-child-text {
+        margin-bottom: 5%;
+        padding-top: 0%;
+    }
+    .h1-404 {
+        margin-bottom: 0%;
+    }
+}
+  
